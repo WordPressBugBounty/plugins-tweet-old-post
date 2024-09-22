@@ -1,0 +1,11 @@
+{
+	"core": null,
+	"plugins": [ "." ],
+	"env": {
+		"tests": {
+			"config": {
+				"TI_E2E_TESTING": true
+			}
+		}
+	}
+}
