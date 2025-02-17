@@ -2,7 +2,7 @@
 Contributors: codeinwp,marius2012,marius_codeinwp,hardeepasrani,Madalin_Themeisle, rsocial, uriahs-victor
 Tags: social media automation, auto post, social media scheduling, social media automation, social media sharing
 Requires at least: 4.7
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
 Stable tag: trunk
 
@@ -323,6 +323,31 @@ http://revive.social/plugins/revive-old-post
 
 
 == Changelog ==
+
+##### [Version 9.2.1](https://github.com/Codeinwp/tweet-old-post/compare/v9.2.0...v9.2.1) (2025-02-17)
+
+- Removed Telegram SDK and added a custom Telegram API handler
+
+
+
+
+#### [Version 9.2.0](https://github.com/Codeinwp/tweet-old-post/compare/v9.1.3...v9.2.0) (2025-02-13)
+
+### New Features
+- Added Telegram network service [PRO]
+- Added Mastodon network service [PRO]
+- Ability to share the link in the first comment of a shared post and customize the comment [PRO]
+- Added compatibility with Polylang and TranslatePress translation plugins [PRO]
+
+### Improvements
+- Adds action scheduler support
+
+### Fixes
+- Fixed issue with image not being sent via Zapier integrations
+- Fixed issue with remaining accounts being temporarily invisible in the Post Form tab after removing any existing account
+
+
+
 
 ##### [Version 9.1.3](https://github.com/Codeinwp/tweet-old-post/compare/v9.1.2...v9.1.3) (2024-11-11)
 
