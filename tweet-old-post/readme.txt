@@ -112,6 +112,8 @@ Revive Social isn't like every other social media marketing tool. We've tailored
 - WordPress to Google My Business(GMB) [Pro]
 - WordPress to Vkontakte(VK) Profiles [Pro]
 - WordPress to Vkontakte(VK) Communities [Pro]
+- WordPress to Telegram [Pro]
+- WordPress to Mastodon [Pro]
 
 Some of the available networks and features require the Pro version of the plugin. Check out the free vs pro table [here.](https://docs.revive.social/article/941-revive-old-post-free-vs-pro)
 
@@ -159,9 +161,15 @@ Some of the available networks and features require the Pro version of the plugi
 
 - Post to Vk Communities [Pro]
 
+- Post to Telegram [Pro]
+
+- Post to Mastodon [Pro]
+
 - WordPress Auto Republish post after sharing [Pro]
 
-- Share multilingual posts to respective pages with WPML example, share English Posts to your English social media accounts, and Spanish posts to your Spanish social media accounts. [Pro]
+- Automatically shares the post’s link in the first comment when published on social media [PRO]
+
+- Share multilingual posts to respective pages with WPML, TranslatePress and Polylang support, share English Posts to your English social media accounts, and Spanish posts to your Spanish social media accounts. [Pro]
 
 And More! Try Revive Social, and see why it's the **best** WordPress social media marketing tool to boost your site traffic and keep your followers engaged.
 
@@ -182,7 +190,7 @@ Using the PRO version of Revive Social unlocks a host of additional features to 
 
 - Share **WordPress scheduled posts** to social media on publish. [Learn More](https://docs.revive.social/article/1194-share-scheduled-posts-to-social-media-on-publish-with-revive-old-posts)
 
-- Finer **WPML support** for multilingual websites. [Learn More](https://docs.revive.social/article/1338-how-to-share-different-wpml-languages-to-different-social-media-accounts)
+- Finer **WPML, Polylang, TranslatePress support** for multilingual websites. [Learn More](https://docs.revive.social/article/1338-how-to-share-different-wpml-languages-to-different-social-media-accounts)
 
 **Automatically generate hashtags** for post shares from **tags**, **categories** or from **custom fields**.
 
@@ -200,7 +208,13 @@ Using the PRO version of Revive Social unlocks a host of additional features to 
 
 - **WordPress to Vkontakte(VK) Communities** scheduling and auto post
 
+- **WordPress to Telegram** scheduling and auto post
+
+- **WordPress to Mastodons** scheduling and auto post
+
 - Connect **multiple social media accounts** to WP
+
+- Automatically shares the post’s link in the first comment when published on social media
 
 - Add [custom UTM tags](https://docs.revive.social/article/925-how-to-use-custom-utm-tags) for analytics to your social media shares
 
@@ -324,29 +338,32 @@ http://revive.social/plugins/revive-old-post
 
 == Changelog ==
 
+##### [Version 9.2.2](https://github.com/Codeinwp/tweet-old-post/compare/v9.2.1...v9.2.2) (2025-02-18)
+
+- Tested compatibility between versions of the plugin
+
+
+
+
 ##### [Version 9.2.1](https://github.com/Codeinwp/tweet-old-post/compare/v9.2.0...v9.2.1) (2025-02-17)
 
 - Removed Telegram SDK and added a custom Telegram API handler
 
 
-
-
 #### [Version 9.2.0](https://github.com/Codeinwp/tweet-old-post/compare/v9.1.3...v9.2.0) (2025-02-13)
 
-### New Features
+New Features
 - Added Telegram network service [PRO]
 - Added Mastodon network service [PRO]
 - Ability to share the link in the first comment of a shared post and customize the comment [PRO]
 - Added compatibility with Polylang and TranslatePress translation plugins [PRO]
 
-### Improvements
+Improvements
 - Adds action scheduler support
 
-### Fixes
+Fixes
 - Fixed issue with image not being sent via Zapier integrations
 - Fixed issue with remaining accounts being temporarily invisible in the Post Form tab after removing any existing account
-
-
 
 
 ##### [Version 9.1.3](https://github.com/Codeinwp/tweet-old-post/compare/v9.1.2...v9.1.3) (2024-11-11)
@@ -354,8 +371,6 @@ http://revive.social/plugins/revive-old-post
 - Fixed issue with Revive Social menu item being visible to match user permissions
 - Fixed PHP deprecation error showing in the console
 - Updated dependencies
-
-
 
 
 ##### [Version 9.1.2](https://github.com/Codeinwp/tweet-old-post/compare/v9.1.1...v9.1.2) (2024-08-28)
@@ -375,16 +390,18 @@ http://revive.social/plugins/revive-old-post
 
 #### [Version 9.1.0](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.31...v9.1.0) (2024-07-17)
 
-### New features
+New features
 - Connect 30+ additional networks via Zapier with our new [Webhook integration](https://docs.revive.social/article/2037-maximize-your-social-presence-effortless-integration-with-zapier) (PRO).
 - [Advanced Content Editing](https://docs.revive.social/article/2038-personalize-your-social-media-shares-with-the-custom-content-editor): Introduced a new Custom Content editor for post captions, including magic tags for dynamic content (PRO).
-### Improvements
+
+Improvements
 - Rebranded to Revive Social
 - Integrated Yoast Title & Description option for sharing content (PRO).
 - Reduced the add-on file size (PRO). 
 - Improved the UI with optimized button positions, enhanced color contrast, and a reorganized layout for options and Dashboard notices.
 - [Improved documentation](https://docs.revive.social/article/2035-troubleshooting-guide-for-facebook-account-connection-errors) to better assist with error handling when connecting to Facebook.
-### Fixes
+
+Fixes
 - Resolved issue with disconnected Facebook groups appearing in the Dashboard.
 - Corrected social network icons display issues across all site languages.
 - Removed the outdated plugin roadmap from the Dashboard.
@@ -425,11 +442,11 @@ http://revive.social/plugins/revive-old-post
 
 ##### [Version 9.0.27](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.26...v9.0.27) (2024-04-23)
 
-### Bug Fixes
+Bug Fixes
 - Fixed issue with titles not always showing correct escaped characters.
 - Fixed instant sharing not working correctly with scheduled posts, only published posts are now eligible.
 
-### Improvements
+Improvements
 - Improved compatibility with newer versions of PHP
 - Updated internal dependencies
 
@@ -438,7 +455,7 @@ http://revive.social/plugins/revive-old-post
 
 ##### [Version 9.0.26](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.25...v9.0.26) (2024-02-29)
 
-### Fixes
+Fixes
 - Updated dependencies
 
 
@@ -446,14 +463,14 @@ http://revive.social/plugins/revive-old-post
 
 ##### [Version 9.0.25](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.24...v9.0.25) (2024-02-20)
 
-### Fixes
+Fixes
 
 - Page will refresh when a social media account is added.
 - Instant sharing checkbox will now be selected when Instant
 
 ##### [Version 9.0.24](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.23...v9.0.24) (2024-02-12)
 
-### Fixes
+Fixes
 - Social media accounts are not selected with Instant sharing activated
 
 
@@ -461,14 +478,14 @@ http://revive.social/plugins/revive-old-post
 
 ##### [Version 9.0.23](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.22...v9.0.23) (2024-02-01)
 
-### Improvements
+Improvements
 - Quota limit handling when sharing in X Network (re-quires re-login with your X account)
 - Button to export Logs as a text file
 - New logs display design
 - Sharing tweets via the Revive Social server
 
 
-### Bux Fixes:
+Bux Fixes:
 -  URL shortener error handling
 - Fixed instant sharing issue with scheduled posts
 
@@ -477,7 +494,7 @@ http://revive.social/plugins/revive-old-post
 
 ##### [Version 9.0.22](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.21...v9.0.22) (2023-12-22)
 
-### Fixes
+Fixes
 - Changed the default usage of X (ex Twitter) to own API keys
 - Updated the JS pipeline
 - Fixed compatibility issue with the LearnPress plugin
@@ -597,7 +614,7 @@ PHP version required updated to 7.4
 
 ##### [Version 9.0.7](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.6...v9.0.7) (2022-04-21)
 
-### Info
+Info
 - Update WP tested up to version
 - Added two new hooks  and  that fire before post is shared
 - Clean up some old options from version < 8.0 when housekeeping option is turned on
@@ -607,7 +624,7 @@ PHP version required updated to 7.4
 
 ##### [Version 9.0.6](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.5...v9.0.6) (2021-12-13)
 
-### Fixes
+Fixes
 - The same post would some times get shared too soon after it had previously been shared.
 
 
@@ -615,7 +632,7 @@ PHP version required updated to 7.4
 
 ##### [Version 9.0.5](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.4...v9.0.5) (2021-08-17)
 
-### Changes
+Changes
 - Add notice about Remote Cron feature removal
 
 
@@ -623,10 +640,10 @@ PHP version required updated to 7.4
 
 ##### [Version 9.0.4](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.3...v9.0.4) (2021-08-17)
 
-### Fixes
+Fixes
 - Google My Business posts were not sharing because of missing Topic Type field
 
-### Changes
+Changes
 - Turned off Remote Cron feature. Use [this doc](https://docs.revive.social/article/686-fix-revive-old-post-not-posting) if you have issues where your posts aren't sharing.
 - Google My Business errors will now return more information with details on why the post didn't share.
 
@@ -635,7 +652,7 @@ PHP version required updated to 7.4
 
 ##### [Version 9.0.3](https://github.com/Codeinwp/tweet-old-post/compare/v9.0.2...v9.0.3) (2021-06-24)
 
-### Fixes
+Fixes
 - LinkedIn shared article posts would not show the preview image.
 - The filter to set the WPML language that is shared to accounts was being overridden in the Lite version of the plugin.
 - Handle cases where the wpml_language option is not set for an account and the user tries to share a post.
@@ -646,11 +663,11 @@ PHP version required updated to 7.4
 
 = 9.0.2 - 2021-06-07  =
 
-#### Features
+Features
 * [New Pro] Post Format "Share Content" option to share post's Yoast SEO title or description.
 * New Post Format option to randomize hashtags before sharing.
 
-#### Fixes
+Fixes
 * All backslashes were not being removed from Post on Publish share messages.
 * Post on Publish checkboxes would sometimes be checked by default while updating already published posts.
 * Post on Publish feature would sometimes share the post at odd times if the "True Instant Share" option was turned off in General Settings of ROP.
