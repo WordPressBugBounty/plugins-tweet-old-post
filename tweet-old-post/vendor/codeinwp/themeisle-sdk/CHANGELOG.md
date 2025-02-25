@@ -1,3 +1,12 @@
+##### [Version 3.3.44](https://github.com/Codeinwp/themeisle-sdk-main/compare/v3.3.43...v3.3.44) (2025-02-18)
+
+- Fix variable mismatch in the install category function.
+
+##### [Version 3.3.43](https://github.com/Codeinwp/themeisle-sdk-main/compare/v3.3.42...v3.3.43) (2025-02-18)
+
+- Compute survey install category as common data.
+- Add auto-trigger cancel event
+
 ##### [Version 3.3.42](https://github.com/Codeinwp/themeisle-sdk-main/compare/v3.3.41...v3.3.42) (2025-02-17)
 
 - Updated Formbricks package version
