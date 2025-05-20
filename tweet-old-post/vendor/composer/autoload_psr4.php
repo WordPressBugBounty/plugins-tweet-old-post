@@ -9,5 +9,5 @@ return array(
     'VK\\' => array($vendorDir . '/vkcom/vk-php-sdk/src/VK'),
     'Facebook\\' => array($vendorDir . '/facebook/graph-sdk/src/Facebook'),
     'Composer\\CaBundle\\' => array($vendorDir . '/composer/ca-bundle/src'),
-    'Abraham\\TwitterOAuth\\' => array($vendorDir . '/abraham/twitteroauth/src'),
+    'Abraham\\TwitterOAuth\\' => array($vendorDir . '/codeinwp/twitteroauth/src'),
 );
