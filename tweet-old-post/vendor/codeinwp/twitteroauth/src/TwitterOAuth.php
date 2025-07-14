@@ -375,9 +375,10 @@ class TwitterOAuth extends Config
                 'You must supply a readable file',
             );
         }
+        
         $parameters['media'] = base64_encode($file);
         return $this->http('POST', self::API_HOST, $path, $parameters, [
-            'jsonPayload' => false,
+            'jsonPayload' => true,
         ]);
     }
 
@@ -395,10 +396,11 @@ class TwitterOAuth extends Config
         $init = $this->http(
             'POST',
             self::API_HOST,
-            $path,
+            'media/upload/initialize',
             $this->mediaInitParameters($parameters),
-            ['jsonPayload' => false],
+            ['jsonPayload' => true],
         );
+
         if (!property_exists($init, 'data')) {
             throw new TwitterOAuthException(
                 $init->errors[0]->message ?? 'Missing "data"',
@@ -408,30 +410,26 @@ class TwitterOAuth extends Config
         $segmentIndex = 0;
         $media = fopen($parameters['media'], 'rb');
         while (!feof($media)) {
-            $this->http(
+            $req = $this->http(
                 'POST',
                 self::API_HOST,
-                'media/upload',
+                "media/upload/{$init->data->id}/append",
                 [
-                    'command' => 'APPEND',
-                    'media_id' => $init->data->id,
                     'segment_index' => $segmentIndex++,
-                    'media' => new CURLFile('data://application/octet-stream;base64,' . base64_encode(fread($media, $this->chunkSize)), $parameters['media_type'], 'chunk'),
+                    'media' => base64_encode(fread($media, $this->chunkSize)),
                 ],
-                ['jsonPayload' => false],
+                ['jsonPayload' => true],
             );
         }
         fclose($media);
+
         // Finalize
         $finalize = $this->http(
             'POST',
             self::API_HOST,
-            'media/upload',
-            [
-                'command' => 'FINALIZE',
-                'media_id' => $init->data->id,
-            ],
-            ['jsonPayload' => false],
+                "media/upload/{$init->data->id}/finalize",
+            [],
+            ['jsonPayload' => true],
         );
         return $finalize;
     }
@@ -453,7 +451,6 @@ class TwitterOAuth extends Config
             'shared',
         ];
         $base = [
-            'command' => 'INIT',
             'total_bytes' => filesize($parameters['media']),
         ];
         $allowed_parameters = array_intersect_key(

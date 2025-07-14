@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'codeinwp/tweet-old-post',
-        'pretty_version' => 'v9.2.5',
-        'version' => '9.2.5.0',
-        'reference' => '54738b50afecb61859ece5b8efeb0abfadca0274',
+        'pretty_version' => 'v9.3.0',
+        'version' => '9.3.0.0',
+        'reference' => '3b37686207d69a80172a1ced9df4351102207fa7',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'codeinwp/tweet-old-post' => array(
-            'pretty_version' => 'v9.2.5',
-            'version' => '9.2.5.0',
-            'reference' => '54738b50afecb61859ece5b8efeb0abfadca0274',
+            'pretty_version' => 'v9.3.0',
+            'version' => '9.3.0.0',
+            'reference' => '3b37686207d69a80172a1ced9df4351102207fa7',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -31,7 +31,7 @@
         'codeinwp/twitteroauth' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5fa87042325015e26581461a5200972657049dc8',
+            'reference' => '9f8c5b8478e0845c137c91b86a98ba367f5e7695',
             'type' => 'library',
             'install_path' => __DIR__ . '/../codeinwp/twitteroauth',
             'aliases' => array(
