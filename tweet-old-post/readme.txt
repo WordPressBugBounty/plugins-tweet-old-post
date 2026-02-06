@@ -2,7 +2,7 @@
 Contributors: codeinwp,marius2012,marius_codeinwp,hardeepasrani,Madalin_Themeisle, rsocial, uriahs-victor
 Tags: social media automation, auto post, social media scheduling, social media automation, social media sharing
 Requires at least: 4.7
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
 Stable tag: trunk
 
@@ -338,6 +338,13 @@ http://revive.social/plugins/revive-old-post
 
 
 == Changelog ==
+
+##### [Version 9.3.4](https://github.com/Codeinwp/tweet-old-post/compare/v9.3.3...v9.3.4) (2025-11-05)
+
+- Enhanced security
+
+
+
 
 ##### [Version 9.3.3](https://github.com/Codeinwp/tweet-old-post/compare/v9.3.2...v9.3.3) (2025-08-27)
 
