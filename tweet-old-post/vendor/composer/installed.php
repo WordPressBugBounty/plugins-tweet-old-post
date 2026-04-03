@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'codeinwp/tweet-old-post',
-        'pretty_version' => 'v9.3.4',
-        'version' => '9.3.4.0',
-        'reference' => '6091e50a815d9f398ad1801b4dbf4bb3cdf88bc5',
+        'pretty_version' => 'v9.3.5',
+        'version' => '9.3.5.0',
+        'reference' => '2c26e55efd961023bdd1c21e1c1bd2d3915bb2c4',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         'codeinwp/themeisle-sdk' => array(
-            'pretty_version' => '3.3.48',
-            'version' => '3.3.48.0',
-            'reference' => '0727d2cf2fc9bfb81b42968aeaf2bf4e340f021e',
+            'pretty_version' => '3.3.51',
+            'version' => '3.3.51.0',
+            'reference' => 'bb2a8414b0418b18c68c9ff1df3d7fb10467928d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../codeinwp/themeisle-sdk',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'codeinwp/tweet-old-post' => array(
-            'pretty_version' => 'v9.3.4',
-            'version' => '9.3.4.0',
-            'reference' => '6091e50a815d9f398ad1801b4dbf4bb3cdf88bc5',
+            'pretty_version' => 'v9.3.5',
+            'version' => '9.3.5.0',
+            'reference' => '2c26e55efd961023bdd1c21e1c1bd2d3915bb2c4',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

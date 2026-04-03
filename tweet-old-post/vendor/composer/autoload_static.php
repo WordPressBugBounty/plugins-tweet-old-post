@@ -12,38 +12,38 @@ class ComposerStaticInit414f9a7c89b5140711e2c342d07ecbec
     );
 
     public static $prefixLengthsPsr4 = array (
-        'V' => 
+        'V' =>
         array (
             'VK\\' => 3,
         ),
-        'F' => 
+        'F' =>
         array (
             'Facebook\\' => 9,
         ),
-        'C' => 
+        'C' =>
         array (
             'Composer\\CaBundle\\' => 18,
         ),
-        'A' => 
+        'A' =>
         array (
             'Abraham\\TwitterOAuth\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'VK\\' => 
+        'VK\\' =>
         array (
             0 => __DIR__ . '/..' . '/vkcom/vk-php-sdk/src/VK',
         ),
-        'Facebook\\' => 
+        'Facebook\\' =>
         array (
             0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
         ),
-        'Composer\\CaBundle\\' => 
+        'Composer\\CaBundle\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
         ),
-        'Abraham\\TwitterOAuth\\' => 
+        'Abraham\\TwitterOAuth\\' =>
         array (
             0 => __DIR__ . '/..' . '/codeinwp/twitteroauth/src',
         ),

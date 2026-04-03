@@ -320,6 +320,12 @@ If you have any questions please ask on the [support forum](https://wordpress.or
 
 - Yes, Revive Social can share to LinkedIn business pages as well as personal profiles.
 
+**How to report a security issue?**
+ 
+Plugin security is a core priority for us. If you identify a potential vulnerability, we ask that you disclose it responsibly.
+
+Please follow the reporting protocols outlined on our [Security Page](https://themeisle.com/security/).
+
 == Screenshots ==
 
 1. Revive Social dashboard (no accounts connected).
@@ -338,6 +344,17 @@ http://revive.social/plugins/revive-old-post
 
 
 == Changelog ==
+
+##### [Version 9.3.5](https://github.com/Codeinwp/tweet-old-post/compare/v9.3.4...v9.3.5) (2026-04-03)
+
+- Fixed creation hashtags on Bluesky network
+- Fixed issue with Google Business Profile posting failure when locations are connected from multiple Google account
+- Added automatic cleanup for sharing logs to prevent database slowdowns
+- Improved status showing up correctly in dashboard when using Start/Stop sharing buttons
+- Updated dependencies
+
+
+
 
 ##### [Version 9.3.4](https://github.com/Codeinwp/tweet-old-post/compare/v9.3.3...v9.3.4) (2025-11-05)
 
