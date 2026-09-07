@@ -2,7 +2,7 @@
 Contributors: codeinwp,marius2012,marius_codeinwp,hardeepasrani,Madalin_Themeisle, rsocial, uriahs-victor
 Tags: social media automation, auto post, social media scheduling, social media automation, social media sharing
 Requires at least: 4.7
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: trunk
 
@@ -344,6 +344,15 @@ http://revive.social/plugins/revive-old-post
 
 
 == Changelog ==
+
+##### [Version 9.4.2](https://github.com/Codeinwp/tweet-old-post/compare/v9.4.1...v9.4.2) (2026-09-07)
+
+- Fixed queued posts being shared even after exceeding the maximum post age limit.
+- Fixed stale Instant Sharing queue entries flooding connected accounts after a cron recovery — entries older than one day now expire instead of being shared.
+- Fixed LinkedIn account reconnection losing data before the dashboard reloads.
+
+
+
 
 ##### [Version 9.4.1](https://github.com/Codeinwp/tweet-old-post/compare/v9.4.0...v9.4.1) (2026-08-04)
 
