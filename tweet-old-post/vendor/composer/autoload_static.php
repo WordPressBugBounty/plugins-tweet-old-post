@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a
+class ComposerStaticInit6c96ad136ed49047ade0ceca650e2e68
 {
     public static $files = array (
         'c65d09b6820da036953a371c8c73a9b1' => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook/polyfills.php',
@@ -16,6 +16,10 @@ class ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a
         array (
             'VK\\' => 3,
         ),
+        'R' =>
+        array (
+            'Rop_Vendor\\TwitterOAuth\\' => 24,
+        ),
         'F' =>
         array (
             'Facebook\\' => 9,
@@ -24,16 +28,16 @@ class ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a
         array (
             'Composer\\CaBundle\\' => 18,
         ),
-        'A' =>
-        array (
-            'Abraham\\TwitterOAuth\\' => 21,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'VK\\' =>
         array (
             0 => __DIR__ . '/..' . '/vkcom/vk-php-sdk/src/VK',
+        ),
+        'Rop_Vendor\\TwitterOAuth\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/lib/twitteroauth/src',
         ),
         'Facebook\\' =>
         array (
@@ -42,10 +46,6 @@ class ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a
         'Composer\\CaBundle\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
-        ),
-        'Abraham\\TwitterOAuth\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/codeinwp/twitteroauth/src',
         ),
     );
 
@@ -64,9 +64,9 @@ class ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit545425dbd3daff7acd3be203b6c88e1a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6c96ad136ed49047ade0ceca650e2e68::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6c96ad136ed49047ade0ceca650e2e68::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6c96ad136ed49047ade0ceca650e2e68::$classMap;
 
         }, null, ClassLoader::class);
     }

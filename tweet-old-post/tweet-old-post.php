@@ -16,7 +16,7 @@
  * Plugin Name: Revive Social
  * Plugin URI: https://revive.social/
  * Description: WordPress plugin that automatically schedules and posts your content to multiple social networks (including Facebook, X, LinkedIn, and Instagram), helping you promote and drive more traffic to your website. For questions, comments, or feature requests, <a href="http://revive.social/support/?utm_source=plugindesc&utm_medium=announce&utm_campaign=top">contact </a> us!
- * Version:           9.4.2
+ * Version:           9.4.3
  * Author:            revive.social
  * Author URI:        https://revive.social/
  * WordPress Available:  yes
@@ -157,7 +157,7 @@ function run_rop() {
 	$use_remote_cron = filter_var( $use_remote_cron, FILTER_VALIDATE_BOOLEAN );
 	define( 'ROP_CRON_ALTERNATIVE', $use_remote_cron );
 
-	define( 'ROP_LITE_VERSION', '9.4.2' );
+	define( 'ROP_LITE_VERSION', '9.4.3' );
 	define( 'ROP_LITE_BASE_FILE', __FILE__ );
 	$debug = false;
 	if ( function_exists( 'wp_get_environment_type' ) ) {
@@ -241,6 +241,26 @@ function run_rop() {
 				'has_upgrade_menu' => $global_settings->license_type() < 1,
 				'upgrade_text'     => esc_html__( 'Upgrade to Pro', 'tweet-old-post' ),
 				'upgrade_link'     => function_exists( 'tsdk_utmify' ) ? tsdk_utmify( Rop_I18n::UPSELL_LINK, 'aboutUsPage' ) : esc_url( Rop_I18n::UPSELL_LINK ),
+			);
+		}
+	);
+
+	add_filter(
+		'tweet_old_post_ai_connect_metadata',
+		function () {
+			return array(
+				'name'         => 'Revive Social',
+				'notice_cases' => array(
+					__( 'find out why posts are not being shared', 'tweet-old-post' ),
+					__( 'choose which posts get shared', 'tweet-old-post' ),
+					__( 'review your sharing queue', 'tweet-old-post' ),
+				),
+				'prompts'      => array(
+					__( 'Only let Revive Social share posts that are at least 30 days old, and skip anything with "giveaway" in the title.', 'tweet-old-post' ),
+					__( 'Share posts from my Reviews category too, and leave out Press releases.', 'tweet-old-post' ),
+					__( 'What is scheduled to go out next on each of my connected accounts?', 'tweet-old-post' ),
+				),
+				'ability_prefix'    => 'revive',
 			);
 		}
 	);

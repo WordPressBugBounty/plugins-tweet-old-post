@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'VK\\' => array($vendorDir . '/vkcom/vk-php-sdk/src/VK'),
+    'Rop_Vendor\\TwitterOAuth\\' => array($baseDir . '/lib/twitteroauth/src'),
     'Facebook\\' => array($vendorDir . '/facebook/graph-sdk/src/Facebook'),
     'Composer\\CaBundle\\' => array($vendorDir . '/composer/ca-bundle/src'),
-    'Abraham\\TwitterOAuth\\' => array($vendorDir . '/codeinwp/twitteroauth/src'),
 );
